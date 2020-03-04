@@ -1052,7 +1052,8 @@ MonoBehaviour:
   fartClone: {fileID: 0}
   carSound: {fileID: 1930433120}
   safe: 0
-  test: {fileID: 0}
+  score: 0
+  car: {fileID: 1893853216933842813, guid: ec4eddb77ea86d34b8e70d479aebc80b, type: 3}
 --- !u!1 &1280921724
 GameObject:
   m_ObjectHideFlags: 0

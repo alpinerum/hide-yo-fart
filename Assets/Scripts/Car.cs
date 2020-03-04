@@ -38,6 +38,8 @@ public class Car : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target, step);
         sound.clip = engineSounds[random];
         sound.Play();
+        isSafe = sound.isPlaying;
+        //print(isSafe);
         //engineSounds[random].Play();
         if (transform.position.x > 18.9) {
             //print(random);
@@ -69,7 +71,8 @@ public class Car : MonoBehaviour
         
         //print(isSafe);
         moveCar();
-        isSafe = sound.isPlaying;               //intended for determining if car sound was playing
+        print(isSafe);
+        //isSafe = sound.isPlaying;               //intended for determining if car sound was playing
         fartEffect fart = gameObject.GetComponent<fartEffect>();
         //print(fart);
         //print(sound.isPlaying);

@@ -11,12 +11,14 @@ public class fartEffect : MonoBehaviour
     public GameObject carSound;
     public bool safe;
     public float score;
+    public Car car;
     //public GameObject test;
     // Start is called before the first frame update
     void Start()
     {
         score = 0.0f;
         fartClone = new GameObject();
+        print(car);
         //InvokeRepeating("CheckScript", 0.1f, 0.1f);
         //test = GameObject.Find("car spawner");
         //Car car = test.GetComponent<Car>();
@@ -41,6 +43,7 @@ public class fartEffect : MonoBehaviour
             fart.Stop();
             Destroy(fartClone);
         }
+        print(car.isSafe);
         //if (car != null) {
         //    print(car.isSafe);
         //}
@@ -48,7 +51,7 @@ public class fartEffect : MonoBehaviour
         //if (!Car.sound.isPlaying && fart.isPlaying) {         //check to see if car sound is not playing when fart was triggered
         //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //}
-        print(score);
+        //print(score);
     }
     //  void CheckScript() {
     //      //Car car = gameObject.GetComponent<Car>();
